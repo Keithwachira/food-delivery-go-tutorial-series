@@ -26,7 +26,7 @@ type User struct {
 	Orders []Orders
 	//this defines the relationship between orders and users
 	//its says that one user can have to many orders and UserID is the foreign_key in the order table
-	AddressID int
+	AddressID int `json:"address_id"`
 	///address_id is a foreign_key from the address table....
 	CreatedAt time.Time
 	UpdatedAt time.Time
